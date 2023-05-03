@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inspiration&family=Italianno&family=Pinyon+Script&family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #020e04;
+    --transparent: #10251200;
+    --beige: #d1c898;
+    --brown: #3c2b0c;  
+    --white: #f7f6f3;  
+    font-family: 'Parisienne', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Allura', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+
+/*menu*/
+.nav-bar {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--transparent);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5vw;
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 8vh;
+    color: var(--beige);
+    font-family: 'Allura', cursive;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 4vw;
+}
+
+.menu-item {
+    font-size: 1.5vw;
+    color: var(--beige);
+}
+
+#menu1, #menu2 {
+    color: var(--beige);
+}
+
+.nav-menu-btn {
+    color: var(--brown);
+}
+
+
+.btn {
+    background-color: var(--beige);
+    color: var(--brown);
+    font-size: 0.8em;
+    font-weight: 400;
+    padding: 0.5vw 1.5vw;
+    border-radius: 15px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+#menu-btn {
+    font-size: 5vh;
+    cursor: pointer;
+    position: absolute;
+    right: 4vh;
+    color: var(--beige);
+    margin-top: 8vh;
+    display: none;
+}
+
+#nav-btn {
+    color: var(--brown);
+}
+
+/*.active-scroll {
+    background-color: var(--blue);
+} */
+
+/*menu*/
+
+/*HEADER*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 8), rgba(0, 0, 0, 0)), url(../images/tim-mossholder-ArQIWcmOlA8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-title {
+    margin: 3vw 0;
+    font-size: 6vmin;
+    font-weight: 400;
+}
+
+.hero-text {
+    font-size: 4vw;
+    font-weight: 300;
+    margin: 3vh auto 6vh;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--brown);
+}
+
+/*HEADER*/
+
+.cover-title {
+    font-size: 0.4rem;
+    margin-left: 5px;
+}
+
+/*MAIN*/
+.main {
+    width: 80%;
+    display: flex;
+    margin: 5vh auto;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    color: var(--brown);
+}
+
+.main-content {
+    width: 90%;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 6vmin;
+    font-weight: 400;
+}
+
+.main-content p {
+    font-size: 3vmin;
+    padding: 4vh;
+}
+
+.main-images {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-images img {
+    width: 100%;
+    margin: 0.5vw;
+    border-radius: 5px;
+}
+
+.main-images img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+#main-btn {
+    color: var(--brown);
+}
+
+/*MAIN*/
+
+/*GALLERY*/
+.gallery-title {
+    background-color: var(--beige);
+    color: var(--brown);
+}
+
+/*Alterando a altura do carrossel*/
+.carousel-inner,
+.carousel-item {
+    height: 80vh;
+}
+
+.gallery {
+    min-height: 100vh;
+    padding: 60px 40px;
+}
+
+.gallery img {
+    width: 70%;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.gallery img:hover {
+    transform: rotate(0);
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+.left-rotate {
+    transform: rotate(-7deg);
+}
+
+.right-rotate {
+    transform: rotate(7deg);
+}
+/*GALLERY*/
+
+
+/*FOOTER*/
+
+.contact {
+    width: 100%;
+    height: auto;
+    background-color: var(--black);
+    color: var(--beige);
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh;
+}
+
+.contact p {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.contact-info {
+    color: var(--beige);
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2vw;
+    font-size: 1.2em;
+}
+
+#footer-btn {
+    color: var(--brown);
+}
+
+.insta {
+    width: 1.2em;
+}
+
+
+
+/*FOOTER*/
